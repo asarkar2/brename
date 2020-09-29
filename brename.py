@@ -14,7 +14,7 @@ def readfile(filename):
     content = [x.strip() for x in content] 
 
     # Remove blank empty lines
-    content = filter(None, content)
+    content = list(filter(None, content))
 
     return content
 
